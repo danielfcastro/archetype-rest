@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.danielfcastro</groupId>
+	<artifactId>archetype-rest</artifactId>
+	<version>1.0.0</version>
+
+	<packaging>maven-archetype</packaging>
+
+	<name>Archetype de Serviços REST danielfcastro sobre WildFly 10.1.0.Final</name>
+	<description>Arquétipo para a construção de serviços REST usando WildFly 10.1.0.Final</description>
+
+	<organization>
+		<name>Daniel Ferreira Castro</name>
+		<url>https://github.com/danielfcastro</url>
+	</organization>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>3.0.1</version>
+			</extension>
+		</extensions>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-archetype-plugin</artifactId>
+					<version>3.0.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://siena.danielfcastro.com.br:8081/repository/danielfcastro-release/</url>
+		</repository>
+	</distributionManagement>	
+	<url>https://github.com/danielfcastro/archetype-rest.git</url>
+	<issueManagement>
+		<url>https://github.com/danielfcastro/archetype-rest/issues</url>
+		<system>GITHUB</system>
+	</issueManagement>
+	<scm>
+		<url>https://github.com/danielfcastro/archetype-rest.git</url>
+	</scm>
+</project>
